@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from posnegDiscriminatorApp.views import top
+
 urlpatterns = [
+    #   ('path', view_func_name, name_keyword)
+    path('', top, name='top'),
     path('admin/', admin.site.urls),
 ]
